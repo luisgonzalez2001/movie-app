@@ -5,11 +5,112 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>MoviesApp</title>
     <link rel="stylesheet" href="./styles/app.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Ubuntu:wght@400;500;700&display=swap" rel="stylesheet">
 </head>
 <body>
-    <h1>MoviesApp</h1>
+    <header id="header" class="header-container">
+        <span class="header-options-icon"></span>
+        <h1 class="header-title">MOVIEAPP</h1>
+        <button class="header-search-icon"></button>
 
+        <form id="search-form" class="header-searchForm inactive">
+            <input type="text" placeholder="Avengers">
+            <button class="header-search-icon"></button>
+        </form>
+    </header>
+
+    <section id="movieDetail" class="movieDetail-container">
+        <div class="movieDetail__background"></div>
+        <div class="movieDetail-info">
+            <div class="movieDetail-datas">
+                <div class="movieDetail-score">
+                    <span class="score-icon">★</span>
+                    <p class="movieDetail-score__text"> 7.5</p>
+                </div>
+                •
+                <p class="movieDetail-time">1h 55m</p>
+                •
+                <p class="movieDetail-category">TRENDING</p>
+            </div>
+            <div class="movieDetail-texts">
+                <h2 class="movieDetail-title">Movie Title</h2>
+                <p class="movieDetail-description inactive">
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptatum, fugit dignissimos eius quaerat volupta
+                </p>
+            </div>
+            <div class="movieDetail-buttons">
+                <button class="movieDetail-btn"><span class="play-icon"></span> PLAY TRAILER</button>
+                <a class="movieDetail-btn-info info-icon"></a>
+            </div>
+        </div>
+    </section>
+
+    <section id="trendingPreview" class="trendingPreview-container">
+        <div class="trendingPreview-header">
+            <h2 class="trendingPreview-title">Trending</h2>
+            <button class="trendingPreview-btn">SEE ALL</button>
+        </div>
+        <article class="trendingPreview-movieList">
+            <!-- <div class="movie-container">
+                <img 
+                    src="https://image.tmdb.org/t/p/w300/adOzdWS35KAo21r9R4BuFCkLer6.jpg"
+                    class="movie-img" 
+                    alt="Movie name"
+                />
+                <p class="movie-title">Movie Title</p>
+            </div> -->
+        </article>
+    </section>
+
+    <section id="popularPreview" class="popularPreview-container">
+        <div class="popularPreview-header">
+            <h2 class="popularPreview-title">Popular</h2>
+            <button class="popularPreview-btn">SEE ALL</button>
+        </div>
+        <article class="popularPreview-movieList">
+            <!-- <div class="movie-container">
+                <img 
+                    src="https://image.tmdb.org/t/p/w300/adOzdWS35KAo21r9R4BuFCkLer6.jpg"
+                    class="movie-img" 
+                    alt="Movie name"
+                />
+                <p class="movie-title">Movie Title</p>
+            </div> -->
+        </article>
+    </section>
+
+    <section id="upcomingPreview" class="upcomingPreview-container">
+        <div class="upcomingPreview-header">
+            <h2 class="upcomingPreview-title">Upcoming</h2>
+            <button class="upcomingPreview-btn">SEE ALL</button>
+        </div>
+        <article class="upcomingPreview-movieList">
+            <!-- <div class="movie-container">
+                <img 
+                    src="https://image.tmdb.org/t/p/w300/adOzdWS35KAo21r9R4BuFCkLer6.jpg"
+                    class="movie-img" 
+                    alt="Movie name"
+                />
+                <p class="movie-title">Movie Title</p>
+            </div> -->
+        </article>
+    </section>
+
+    <section id="categoriesPreview" class="categoriesPreview-container">
+        <h2 class="trendingPreview-title">Categories</h2>
+        <article class="categoriesPreview-list">
+            <!-- <button class="category-btn">Action</button> -->
+        </article>
+    </section>
+
+    <footer>Luis Gonzalez | 2024 ❤ </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
     <script src="./src/private.js"></script>
     <script src="./src/main.js"></script>
+    <script src="./src/navegation.js"></script>
 </body>
 </html>
