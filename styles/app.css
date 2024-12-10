@@ -23,6 +23,7 @@ html {
 }
 
 body {
+    padding-top: 60px;
     background-color: var(--Dark);
     color: var(--White);
     font-family: var(--font-family-text);
@@ -102,7 +103,7 @@ footer {
     color: var(--White);
 }
 
-.trendingPreview-container, .movieDetail-container, .categoriesPreview-container, .popularPreview-container, .upcomingPreview-container {
+.pad20 {
     padding: 0 20px;
 }
 
@@ -123,7 +124,7 @@ footer {
 }
 
 .movieDetail-info {
-    height: 100vh;
+    height: calc(100vh - 60px);
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -186,18 +187,18 @@ footer {
 
 /* Trending Section */
 
-.trendingPreview-container, .popularPreview-container, .upcomingPreview-container {
+.trendingPreview-container, .popularPreview-container, .upcomingPreview-container, .relatedMovies-container, .categoriesPreview-container {
     margin-bottom: 40px;
 }
 
-.trendingPreview-header, .popularPreview-header, .upcomingPreview-header {
+.trendingPreview-header, .popularPreview-header, .upcomingPreview-header, .categoriesPreview-header, .genericList-header {
     display: flex;
     justify-content: space-between;
     align-items: center;
     margin-bottom: 30px;
 }
 
-.trendingPreview-movieList, .popularPreview-movieList, .upcomingPreview-movieList {
+.list {
     display: flex;
     gap: 15px;
     overflow-x: scroll;
@@ -222,16 +223,13 @@ footer {
 }
 
 .movie-container {
-    width: 130px;
     min-width: 130px;
-    max-width: 130px;
 }
 
 .movie-container .movie-img {
     width: 100%;
-    height: 190px;
     min-height: 190px;
-    max-height: 190px;
+    border-radius: 8px;
 }
 
 .movie-container .movie-title {
@@ -244,11 +242,6 @@ footer {
 
 /* Categories Preview Section */
 
-.categoriesPreview-container {
-    text-align: center;
-    margin-bottom: 40px;
-}
-
 .categoriesPreview-list {
     display: flex;
     gap: 10px;
@@ -259,6 +252,15 @@ footer {
 
 .category-btn {
     background-color: var(--Gray);
+}
+
+/* Generic List Section */
+
+.genericList-btn {
+    width: 40px;
+    height: 35px;
+    background: center / 50% no-repeat url('../assets/icons/arrow-left.svg');
+    background-color: var(--Red);
 }
 
 /* ICONS */

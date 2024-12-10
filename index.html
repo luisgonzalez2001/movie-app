@@ -16,13 +16,13 @@
         <h1 class="header-title">MOVIEAPP</h1>
         <button class="header-search-icon"></button>
 
-        <form id="search-form" class="header-searchForm inactive">
+        <form id="searchForm" class="header-searchForm inactive">
             <input type="text" placeholder="Avengers">
             <button class="header-search-icon"></button>
         </form>
     </header>
 
-    <section id="movieDetail" class="movieDetail-container">
+    <section id="movieDetail" class="movieDetail-container pad20">
         <div class="movieDetail__background"></div>
         <div class="movieDetail-info">
             <div class="movieDetail-datas">
@@ -48,12 +48,19 @@
         </div>
     </section>
 
-    <section id="trendingPreview" class="trendingPreview-container">
+    <section id="headerPage" class="headerPage-container pad20 inactive">
+        <div class="genericList-header">
+            <h2 class="genericList-title">Categories</h2>
+            <button class="genericList-btn"></button>
+        </div>
+    </section>
+
+    <section id="trendingPreview" class="trendingPreview-container pad20">
         <div class="trendingPreview-header">
             <h2 class="trendingPreview-title">Trending</h2>
             <button class="trendingPreview-btn">SEE ALL</button>
         </div>
-        <article class="trendingPreview-movieList">
+        <article class="trendingPreview-movieList list">
             <!-- <div class="movie-container">
                 <img 
                     src="https://image.tmdb.org/t/p/w300/adOzdWS35KAo21r9R4BuFCkLer6.jpg"
@@ -65,12 +72,12 @@
         </article>
     </section>
 
-    <section id="popularPreview" class="popularPreview-container">
+    <section id="popularPreview" class="popularPreview-container pad20">
         <div class="popularPreview-header">
             <h2 class="popularPreview-title">Popular</h2>
             <button class="popularPreview-btn">SEE ALL</button>
         </div>
-        <article class="popularPreview-movieList">
+        <article class="popularPreview-movieList list">
             <!-- <div class="movie-container">
                 <img 
                     src="https://image.tmdb.org/t/p/w300/adOzdWS35KAo21r9R4BuFCkLer6.jpg"
@@ -82,12 +89,12 @@
         </article>
     </section>
 
-    <section id="upcomingPreview" class="upcomingPreview-container">
+    <section id="upcomingPreview" class="upcomingPreview-container pad20">
         <div class="upcomingPreview-header">
             <h2 class="upcomingPreview-title">Upcoming</h2>
             <button class="upcomingPreview-btn">SEE ALL</button>
         </div>
-        <article class="upcomingPreview-movieList">
+        <article class="upcomingPreview-movieList list">
             <!-- <div class="movie-container">
                 <img 
                     src="https://image.tmdb.org/t/p/w300/adOzdWS35KAo21r9R4BuFCkLer6.jpg"
@@ -99,17 +106,77 @@
         </article>
     </section>
 
-    <section id="categoriesPreview" class="categoriesPreview-container">
-        <h2 class="trendingPreview-title">Categories</h2>
-        <article class="categoriesPreview-list">
+    <section id="categoriesPreview" class="categoriesPreview-container pad20">
+        <div class="categoriesPreview-header">
+            <h2 class="categoriesPreview">Categories</h2>
+        </div>
+        <article class="categoriesPreview-list list">
             <!-- <button class="category-btn">Action</button> -->
         </article>
+    </section>
+
+    <section id="relatedMovies" class="relatedMovies-container inactive pad20">
+        <h2 class="relatedMovies-title">Similar Movies</h2>
+        <article class="relatedMovies-list list">
+            <div class="movie-container">
+                <img 
+                    src="https://image.tmdb.org/t/p/w300/adOzdWS35KAo21r9R4BuFCkLer6.jpg"
+                    class="movie-img" 
+                    alt="Movie name"
+                />
+                <p class="movie-title">Movie Title</p>
+            </div>
+            <div class="movie-container">
+                <img 
+                    src="https://image.tmdb.org/t/p/w300/adOzdWS35KAo21r9R4BuFCkLer6.jpg"
+                    class="movie-img" 
+                    alt="Movie name"
+                />
+                <p class="movie-title">Movie Title</p>
+            </div>
+            <div class="movie-container">
+                <img 
+                    src="https://image.tmdb.org/t/p/w300/adOzdWS35KAo21r9R4BuFCkLer6.jpg"
+                    class="movie-img" 
+                    alt="Movie name"
+                />
+                <p class="movie-title">Movie Title</p>
+            </div>
+        </article>
+    </section>
+
+    <section id="genericList" class="genericList-container inactive pad20">
+        <div class="movie-container">
+            <img 
+                src="https://image.tmdb.org/t/p/w300/adOzdWS35KAo21r9R4BuFCkLer6.jpg"
+                class="movie-img" 
+                alt="Movie name"
+            />
+            <p class="movie-title">Movie Title</p>
+        </div>
+        <div class="movie-container">
+            <img 
+                src="https://image.tmdb.org/t/p/w300/adOzdWS35KAo21r9R4BuFCkLer6.jpg"
+                class="movie-img" 
+                alt="Movie name"
+            />
+            <p class="movie-title">Movie Title</p>
+        </div>
+        <div class="movie-container">
+            <img 
+                src="https://image.tmdb.org/t/p/w300/adOzdWS35KAo21r9R4BuFCkLer6.jpg"
+                class="movie-img" 
+                alt="Movie name"
+            />
+            <p class="movie-title">Movie Title</p>
+        </div>
     </section>
 
     <footer>Luis Gonzalez | 2024 ❤ </footer>
 
     <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
     <script src="./src/private.js"></script>
+    <script src="./src/nodes.js"></script>
     <script src="./src/main.js"></script>
     <script src="./src/navegation.js"></script>
 </body>
