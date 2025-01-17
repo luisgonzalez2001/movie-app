@@ -13,14 +13,16 @@ const movieDetailSection = $('#movieDetail');
 
 //Lists & container
 const searchForm = $('#searchForm');
-const trendingMoviesPreviewList = $('.trendingPreview-movieList');
-const popularMoviesPreviewList = $('.popularPreview-movieList');
-const upcomingMoviesPreviewList = $('.upcomingPreview-movieList');
-const categoriesMoviesPreviewList = $('.categoriesPreview-list');
-const relatedMoviesList = $('relatedMovies-list');
+const trendingreviewList = $('.trendingPreview-movieList');
+const popularPreviewList = $('.popularPreview-movieList');
+const upcomingPreviewList = $('.upcomingPreview-movieList');
+const categoriesPreviewList = $('.categoriesPreview-list');
+const relatedList = $('.relatedMovies-list');
 
 //Elements
 const headerTitle = $('.header-title');
+
+const btnSearchActive = $('#btnSearch-Active');
 
 const searchFormInput = $('#searchForm input');
 const searchFormBtn = $('#searchForm button');
@@ -29,6 +31,7 @@ const trendingBtn = $('.trendingPreview-btn');
 const popularBtn = $('.popularPreview-btn');
 const upcomingBtn = $('.upcomingPreview-btn');
 
+const movieContainer = $('.movieDetail__background');
 const movieDetailTitle = $('.movieDetail-title');
 const movieDetailDescription = $('.movieDetail-description');
 const movieDetailScore = $('.movieDetail-score__text');
